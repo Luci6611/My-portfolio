@@ -14,7 +14,6 @@
 
 :root {
 
-
     --bg-color: #31393e;
     --second-bg-color: #262f32;
     --text-color: #fff;
@@ -165,6 +164,8 @@ span {
 }
 
 .home-img {
+  width: 100%;
+  height: 100%;
     border-radius: 50%;
    
 }
@@ -172,7 +173,8 @@ span {
 .home-img img {
     object-fit: cover;
     position: relative;
-    width: 32vw;
+    max-width: 100%;
+    height:100%;
     border-radius: 50%;
     box-shadow: 0 0 22px var(--main-color);
     cursor: pointer;
@@ -373,7 +375,7 @@ span {
 }
 
 .service-box {
-    background-color: var(--main-color);
+    background-color: #6c4747;
     height: 300px;
     border-radius: 3rem;
     cursor: pointer;
