@@ -13,10 +13,12 @@
 }
 
 :root {
-    --bg-color: #000000;
-    --second-bg-color: #161616;
+
+
+    --bg-color: #31393e;
+    --second-bg-color: #262f32;
     --text-color: #fff;
-    --main-color: #d81a1ad7;
+    --main-color: #bc5a5a;
 }
 
 html {
@@ -44,7 +46,8 @@ html::-webkit-scrollbar-thumb {
     left: 0%;
     width: 100%;
     padding: 3rem 9%;
-    background: rgba(0, 0, 0, 0.7);
+    
+    background: rgba(162, 89, 89, 0.7);
     filter: drop-shadow(10px);
     display: flex;
     justify-content: space-between;
@@ -54,7 +57,8 @@ html::-webkit-scrollbar-thumb {
 
 .logo {
     font-size: 3rem;
-    color: var(--main-color);
+    color: #e9dede;
+    text-shadow: 2px 20px 2px #877976;
     font-weight: 800;
     cursor: pointer;
     transition: 0.5s ease;
@@ -113,7 +117,6 @@ html::-webkit-scrollbar-thumb {
     .navbar.active {
         display: block;
         
-        
     }
 
     .navbar a {
@@ -163,19 +166,22 @@ span {
 
 .home-img {
     border-radius: 50%;
+   
 }
 
 .home-img img {
+    object-fit: cover;
     position: relative;
     width: 32vw;
     border-radius: 50%;
-    box-shadow: 0 0 25px var(--main-color);
+    box-shadow: 0 0 22px var(--main-color);
     cursor: pointer;
 }
 
 .home-img img:hover {
     transform: scale(1.01);
-    filter: drop-shadow(0 0 25px var(--main-color));
+    filter: drop-shadow(0 0 1px var(--main-color));
+    transition: .2s ease;
 }
 
 .home-content p {
