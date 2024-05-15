@@ -87,8 +87,12 @@ html::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 995px) {
+    body{
+        overflow: hidden;
+    }
     #menu-icon {
         display: block;
+       
     }
 
     .navbar {
@@ -102,11 +106,14 @@ html::-webkit-scrollbar-thumb {
         padding: 1rem 3%;
         background-color: var(--second-bg-color);
         border-top: 0.1rem solid rgba(0, 0, 0, 1);
-       
+        display: none;
+      
     }
 
     .navbar.active {
         display: block;
+        
+        
     }
 
     .navbar a {
@@ -121,6 +128,7 @@ html::-webkit-scrollbar-thumb {
         padding: 1rem;
         border-radius: 0.5rem;
         border-bottom: 0.5rem solid var(--main-color);
+     
     }
 }
 
